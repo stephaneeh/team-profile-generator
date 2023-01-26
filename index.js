@@ -3,11 +3,10 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 
 // links to classes
-const Employee = require("./lib/Employee");
-const Manager = require('./lib/Manager');
-const Engineer = require('./lib/Engineer');
-const Intern = require('./lib/Intern'); 
+const Manager = require('./lib/Manager.js');
+const Engineer = require('./lib/Engineer.js');
+const Intern = require('./lib/Intern.js'); 
 
 
 // link to page creation
-const generateHTML = require('./src/generateHTML');
+const generateHTML = require('./src/generateHTML.js');
