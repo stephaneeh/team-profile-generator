@@ -2,5 +2,5 @@
 const Employee = require('./Employee');
 
 // test cases
-
+// it 
 //it (getRole() should return Manager)

@@ -3,8 +3,7 @@ const Employee = require('./Employee');
 
 // test cases
 
-// validation - Email address
-// it('Email address provided should include an @ symbol')
+// creates employee object
 
 // functions test
 //it ('getName() should return ????)

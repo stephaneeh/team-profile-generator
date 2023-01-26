@@ -2,5 +2,6 @@
 const Employee = require('./Employee');
 
 // test cases
-
-//it (getRole() should return Intern)
+// creates an intern object
+// it (getSchool() should turn info)
+// it (getRole() should return Intern)
