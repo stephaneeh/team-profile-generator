@@ -5,7 +5,6 @@ const engineer = new Engineer("Roger", 1234, "roger@test.com", "roger1234");
 // creates engineer object
 describe("Engineer object", () => {
     it("An engineer object has been created", () => {
-  
       expect(engineer.gitHub).toEqual(expect.any(String));
     });
 
