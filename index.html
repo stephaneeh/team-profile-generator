@@ -1,46 +1,4 @@
-// create Manager card
-function generateManager(data) {
-    if (data.role === "Manager")
-    return `
-${manager.name};
-${manager.id};
-${manager.email};
-${manager.phoneNumber};
-`
-};
-// create Engineer card
 
-// create Intern card 
-
-// add cards to page
-
-// generate html page 
-
-// push array to page 
-// function generateHTML(data) {
-//     console.log(teamArray); 
-//     const pageArray = [];
-
-//     for (let i = 0; i < teamArray.length; i++) {
-//         // call manager function
-//         if (role === 'Manager') {
-//             const managerCard = generateManager(employee);
-
-//             pageArray.push(managerCard);
-//         }
-//     }
-
-//     // joining strings 
-//     const employeeCards = pageArray.join('')
-
-//     // return to generated page
-//     const generateTeam = generateTeamPage(employeeCards); 
-//     return generateTeam;
-// }
-
-// generate html page 
-const generateHTML = function (data) {   
-    return`
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -63,7 +21,7 @@ const generateHTML = function (data) {
             <div class="container">
                 <div class="row justify-content-center" id="team-cards">
                     <!--Team Cards-->
-                    ${data.name}
+                    Manager
                 </div>
             </div>
         </main>
@@ -73,7 +31,4 @@ const generateHTML = function (data) {
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </html>
-  `;
-  }
-
-module.exports = generateHTML;
+  
