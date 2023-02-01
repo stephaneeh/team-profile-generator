@@ -1,7 +1,7 @@
 // create Manager card
 function generateManager (manager) {
     return `
-    <section class="card mb-3 col">
+    <section class="card">
         <h3 class="card-header text-white bg-primary ">Manager</h3>
         <div class="card-body text-dark">
             <h4 class="card-title">${manager.name}</h4>
@@ -18,34 +18,34 @@ function generateManager (manager) {
 // create Engineer card
 function generateEngineer (engineer) {
     return `
-    <section class="card mb-3 col">
-        <h3 class="card-header text-white bg-success ">Engineer</h3>
-        <div class="card-body text-dark">
-            <h4 class="card-title">${engineer.name}</h4>
-            <p class="card-text">
-                <p class="id">ID: ${engineer.id}</p>
-                <p class="email">Email: <a class="text-dark" href="mailto:${engineer.email}">${engineer.email}</a></p>
-                <p class="github">Github: <a class="text-dark" href ="https://github.com/${engineer.github}">github.com/${engineer.github}</a></p>
-            </p>    
-        </div>
-    </section>
+    <section class="card">
+            <h3 class="card-header text-white bg-success ">Engineer</h3>
+            <div class="card-body text-dark">
+                <h4 class="card-title">${engineer.name}</h4>
+                <p class="card-text">
+                    <p class="id">ID: ${engineer.id}</p>
+                    <p class="email">Email: <a class="text-dark" href="mailto:${engineer.email}">${engineer.email}</a></p>
+                    <p class="github">Github: <a class="text-dark" href ="https://github.com/${engineer.github}">github.com/${engineer.github}</a></p>
+                </p>    
+            </div>
+        </section>
     `;
 };
 
 // create Intern card 
 function generateIntern (intern) {
     return `
-    <section class="card mb-3 col">
-        <h3 class="card-header text-white bg-warning ">Intern</h3>
-        <div class="card-body text-dark">
-            <h4 class="card-title">${intern.name}</h4>
-            <p class="card-text">
-                <p class="id">ID: ${intern.id}</p>
-                <p class="email">Email: <a class="text-dark" href="mailto:${intern.email}">${intern.email}</a></p>
-                <p class="school">School: ${intern.school}</p>
-            </p>    
-        </div>
-    </section>
+    <section class="card">
+            <h3 class="card-header text-white bg-warning ">Intern</h3>
+            <div class="card-body text-dark">
+                <h4 class="card-title">${intern.name}</h4>
+                <p class="card-text">
+                    <p class="id">ID: ${intern.id}</p>
+                    <p class="email">Email: <a class="text-dark" href="mailto:${intern.email}">${intern.email}</a></p>
+                    <p class="school">School: ${intern.school}</p>
+                </p>    
+            </div>
+        </section>
     `;
 };
 
@@ -103,9 +103,8 @@ const generateHTML = function (teamCards) {
             <hr class = "bg-primary">
         </header>
         <main>
-            // <section id = "team-cards" class = "row row-cols-3 ">
-            <section id = "team-cards" class = "d-flex justify-content-around">
-           ${teamCards}
+            <section id = "team-cards">
+            ${teamCards}
             </section>           
         </main>
         <footer id="footer" class="p-3 text-center fixed-bottom">
