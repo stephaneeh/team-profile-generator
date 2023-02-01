@@ -1,3 +1,10 @@
 footer a {
     color: white;
   }
+
+#team-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
