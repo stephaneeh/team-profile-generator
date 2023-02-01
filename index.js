@@ -9,7 +9,7 @@ const Engineer = require('./lib/Engineer.js');
 const Intern = require('./lib/Intern.js'); 
 
 // link to page creation
-const generateHTML = require('./src/generateHTML.js');
+const generateHTML = require('./src/generateHTML');
 
 const teamArray = [];
 
@@ -61,7 +61,7 @@ Let's add your team manager
                 }
         },
     ])
-    .then(managerResults => {
+    .then((managerResults) => {
         const { name, id, email, officeNumber } = managerResults;
         const manager = new Manager (name, id, email, officeNumber);
 
@@ -142,17 +142,17 @@ Now let's add your team members
                 }
         },    
     ])
-    .then(employeeResults => {
+    .then((employeeResults) => {
         let { name, id, email, role, github, school } = employeeResults; 
         let employee; 
 
         if (role === 'Engineer') {
             employee = new Engineer (name, id, email, github);
         } else if (role === 'Intern') {
-            employee = new Engineer (name, id, email, school);
+            employee = new Intern (name, id, email, school);
         }
             teamArray.push(employee); //add results to teamArray()
-            console.log(employee);
+            console.log(teamArray);
             confirmAddEmployee();
         })
     };
@@ -186,10 +186,11 @@ now been created!
 };
 
 
-function renderFile(data) {
-        fs.writeFile('index.html', generateHTML(data), (err) =>
-        err ? console.error(err) : console.log('Your teams page has been created!'))
+function renderFile() {
+        fs.writeFile('index.html', renderHTML(teamArray), (err) =>
+        err ? console.error(err) : console.log(teamArray))
     };
 
 // Function call to initialize app
 addManager();
+
