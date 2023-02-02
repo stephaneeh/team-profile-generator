@@ -1,4 +1,4 @@
-# team-profile-generator
+# Team Profile Generator
 
 ![License](https://img.shields.io/badge/License-mit-blue.svg)
 
@@ -29,6 +29,7 @@ To run the test suite, run the following command at the root of your project
 
 ## Screenshot of application
 
+![Screenshot 2023-02-02 at 4 50 48 pm](https://user-images.githubusercontent.com/28996399/216255595-54d46bce-2078-4bdc-9008-7c4080854843.png)
 
 ## Resources
 https://www.npmjs.com/package/inquirer
@@ -39,7 +40,5 @@ https://www.npmjs.com/package/jest
 
 
 ## Link to live video demonstration
-https://drive.google.com/file/d/1CD44pNYwjtv0dCxsYALMMuL4wDpBOxCt/view
 
-## Link to application output
 
