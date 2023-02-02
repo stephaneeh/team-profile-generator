@@ -25,7 +25,7 @@ function generateEngineer (engineer) {
                 <p class="card-text">
                     <p class="id">ID: ${engineer.id}</p>
                     <p class="email">Email: <a class="text-dark" href="mailto:${engineer.email}">${engineer.email}</a></p>
-                    <p class="github">Github: <a class="text-dark" href ="https://github.com/${engineer.github}">github.com/${engineer.github}</a></p>
+                    <p class="github">Github: <a class="text-dark" href ="https://github.com/${engineer.github} target="_blank"">github.com/${engineer.github}</a></p>
                 </p>    
             </div>
         </section>
